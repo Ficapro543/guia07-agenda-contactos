@@ -12,11 +12,17 @@ function agregarContacto() {
     contacto.innerHTML =
         "<h3>" + nombre + "</h3>" +
         "<p>" + telefono + "</p>" +
-        "<p>" + correo + "</p>";
+        "<p>" + correo + "</p>" +
+        "<button onclick='eliminarContacto(this)'>Eliminar</button>";
 
     lista.appendChild(contacto);
 
     document.getElementById("nombre").value = "";
     document.getElementById("telefono").value = "";
     document.getElementById("correo").value = "";
+}
+
+function eliminarContacto(boton) {
+
+    boton.parentElement.remove();
 }
