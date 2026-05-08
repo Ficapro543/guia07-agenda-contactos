@@ -41,3 +41,8 @@ button:hover {
     border-radius: 10px;
     box-shadow: 0px 0px 5px gray;
 }
+
+#mensaje {
+    font-weight: bold;
+    margin-top: 10px;
+}
